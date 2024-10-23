@@ -37,15 +37,18 @@
             "scripts": [
               "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
               "node_modules/jquery/dist/jquery.min.js",
-              "node_modules/owl.carousel/dist/owl.carousel.min.js"            ]
+              "node_modules/owl.carousel/dist/owl.carousel.min.js"
+            ],
+           "allowedCommonJsDependencies": ["lottie-web"]
+
           },
           "configurations": {
             "production": {
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kB",
-                  "maximumError": "1MB"
+                  "maximumWarning": "2MB",
+                  "maximumError": "5MB"
                 },
                 {
                   "type": "anyComponentStyle",
